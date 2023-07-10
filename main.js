@@ -3,14 +3,14 @@
 
 
 function reducirDescuento () {
-    precio = prompt("Ingresar precio");
+    precio = prompt("Ingresar precio del producto");
 	cantidad = prompt("Ingresar cantidad");
 
 	    compra = precio * cantidad;
 	    descuento = compra * 0.30;
 	    pagar = compra - descuento;
 
-	console.log("El desceunto es: " + descuento + "&");
+	console.log("El desceunto es: " + descuento + "$");
 	console.log("El total a pagar es: " + pagar + "$");
 }
 
@@ -20,10 +20,10 @@ function cobrarPago (){
 
     if(monto >= pagar){ 
     vuelto = monto - pagar;
-    console.log("compra exitosa, su vuelto es " + vuelto + "$")
+    alert("compra exitosa, su vuelto es " + vuelto + "$")
 }else{
     falta = pagar - monto;
-    console.log("lo sentimos, te falta " + falta + "$");
+    alert("lo sentimos, te falta " + falta + "$");
 }
 
 }
