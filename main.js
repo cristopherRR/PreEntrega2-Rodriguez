@@ -29,9 +29,10 @@ function cobrarPago (){
 }
 
 }
-while(precio != "ESC" ) {
-    reducirDescuento ();
-cobrarPago ();
 
-precio = prompt("desea seguir comprando");
+while(precio != "no" ) {
+    reducirDescuento ();
+    cobrarPago ();
+
+    precio = prompt("desea seguir comprando, si o no");
 }
