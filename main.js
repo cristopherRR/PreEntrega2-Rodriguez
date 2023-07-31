@@ -37,7 +37,7 @@ function obtenerProductosSeleccionados(productosDisponibles) {
 		let nombreProducto;
 		prods.forEach((prod,index) => nombreProducto += `
 		${index} ${prod.producto}`)
-		let eleccion = parseInt(prompt("Seleccione un articulo: " + nombreProducto))
+		let eleccion = parseInt(prompt("Seleccione un articulo: " + producto))
 
 		let existeEnElCarrito = carrito.find(prod => prod.id === eleccion)
 
